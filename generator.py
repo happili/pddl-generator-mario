@@ -80,7 +80,7 @@ print('        (= (velocity-right) 0.0)\n\
         (= (velocity-left) 0.0)\n\
         ;(= (velocity-fall) 0.0)\n\
         (= (velocity-height) 0.0)\n\
-        (= (y2) 2.0)\n\
+        (= (y2) 3.0)\n\
         (= (x) 1.0)\n\
       \n\
         (= (d-jumped) 0.0)\n\
@@ -94,7 +94,7 @@ print('        (= (velocity-right) 0.0)\n\
     (:goal\n\
         (and\n\
             (>= (x) 6.0)\n\
-            (< (y2) 2.1) \n\
+            ;(< (y2) 2.1) \n\
             (= (velocity-right) 0.0)\n\
             (= (velocity-left) 0.0)\n\
             (= (velocity-height) 0.0)\n\
