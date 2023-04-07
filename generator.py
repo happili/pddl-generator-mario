@@ -1,23 +1,27 @@
 import sys
 
-if len(sys.argv) < 3:
-   print("Run the file as follows : {} <level-length> <level-height> > <problem-file-name>.pddl")
+if len(sys.argv) < 4:
+   print("Run the file as follows : {} <world(integer)-level(integer)> <level-length> <level-height> > <problem-file-name>.pddl")
    sys.exit(-1)
 
-with open('world1-1.txt') as f:
+world = "world" + str(sys.argv[1]) + ".txt"
+
+
+
+with open(world) as f:
     lines = f.readlines()
 
 
 
-if int(sys.argv[1]) > len(lines):
+if int(sys.argv[2]) > len(lines):
  level_length = len(lines)
 else:
-   level_length = int(sys.argv[1])
+   level_length = int(sys.argv[2])
 
-if int(sys.argv[2]) > 13 :
+if int(sys.argv[3]) > 13 :
  level_height = 13
 else:
-   level_height = int(sys.argv[2])
+   level_height = int(sys.argv[3])
 
 
 
