@@ -1,5 +1,9 @@
 import sys
 
+if len(sys.argv) < 3:
+   print("Run the file as follows : {} <level-length> <level-height> > <problem-file-name>.pddl")
+   sys.exit(-1)
+
 with open('world1-1.txt') as f:
     lines = f.readlines()
 
@@ -90,15 +94,13 @@ print('        (= (velocity-right) 0.0)\n\
         (not (falling))\n\
         (not (reached))\n\
     )\n\
-\n\
     (:goal\n\
         (and\n\
-            (>= (x) 6.0)\n\
+            (> (x) '+str(level_length - 1)+')\n\
             ;(< (y2) 2.1) \n\
             (= (velocity-right) 0.0)\n\
             (= (velocity-left) 0.0)\n\
             (= (velocity-height) 0.0)\n\
         )\n\
     )\n\
-\n\
 )')
