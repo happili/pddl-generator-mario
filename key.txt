@@ -1,0 +1,82 @@
+key
+54		ground brick		=
+51
+52		brick block			X
+c0		coin ?				c
+c1		pwrup ?				m
+55
+5a		pwrup brick			M
+c3
+c2		coin				$
+58
+5d		coin brick			C
+57
+5c		star brick			S
+61		solid block			]
+24		flagpole
+25		flagpole top		F
+16		tree L
+17		tree
+18		tree R				T
+4c		tree trunk			H
+19		bigmush L
+1a		bigmush
+1b		bigmush R			|
+4f		bigmush stem 		
+50		bigmush stem		-
+10		top pipe L exit
+11		top pipe R exit		q
+12		top pipe L
+13		top pipe R
+14		mid pipe L
+15		mid pipe R			P
+62		castle brick		+
+65		cannon B
+64		cannon T			>
+69		seafloor			O
+22		coral				Y
+00		air					.
+86
+87		water				.
+6c		H pipe B
+6b		H pipe T			P
+xx		extra pipe			:
+5f		invis coin block	I
+xx		invis 1up block		U
+xx		vine block			J
+xx		springboard			Z
+86
+87		lava				L
+
+!.=+Ogkr<]YLX$cmMCRKbi@Qs&)P:qSI-|HTFe}t^BUJZ>
+.=gkr<]X$cmMCRKb@&)PqSIFUJZ>
+.=]X$cmMC)PqSIFUJZ>
+
+add
+goomba		g
+gkoopa		k
+rkoopa		r
+gpara		K
+rpara		R
+beetle		b
+cheep		i
+plant		<
+bowser		B
+blooper		Q
+lakitu		&
+hammer		@
+podoboo		}
+firebar		s
+elevator	e
+platform	)
+axe			t
+bullet		^
+
+remove
+cloud			80-85
+bush			2-4
+castle			45-4b/52
+mountain		5-a
+tree			4e/d-f
+fence			4d
+rope/extension	

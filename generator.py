@@ -82,11 +82,10 @@ print('    )\n\
     (:init')
 
 for element in init:
-    print('       ' + element)
+    print('        ' + element)
 
 print('        (= (velocity-right) 0.0)\n\
         (= (velocity-left) 0.0)\n\
-        ;(= (velocity-fall) 0.0)\n\
         (= (velocity-height) 0.0)\n\
         (= (y2) 3.0)\n\
         (= (x) 1.0)\n\
@@ -107,4 +106,4 @@ print('        (= (velocity-right) 0.0)\n\
             (= (velocity-height) 0.0)\n\
         )\n\
     )\n\
-)')
+)',end='')
