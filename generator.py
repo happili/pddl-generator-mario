@@ -1,12 +1,14 @@
 import sys
 
+#print if command is not in the correct format and size
+
 if len(sys.argv) < 4:
    print("Run the file as follows : {} <world(integer)-level(integer)> <level-length> <level-height> > <problem-file-name>.pddl")
    sys.exit(-1)
 
 world = "world" + str(sys.argv[1]) + ".txt"
 
-
+### take data from the comand line and the .txt file
 
 with open(world) as f:
     lines = f.readlines()
@@ -61,10 +63,8 @@ for i in range(level_length):
     level.append(cols)
     cols = []
 
-#print(init)
-# print(objects)
-# print(air_blocks)
-#print(level) ### print our level (with chosen size)
+##### we print the problem with simple print statements (and we use the arrays created above to print out the initialised states)
+
 
 print('(define (problem problem_name)\n\
     (:domain supermario_nes)\n\
